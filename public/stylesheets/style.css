@@ -1,11 +1,24 @@
+@charset "UTF-8";
+
+/**** BASIC ****/
 body {
 	background-color: lightgrey;
 	font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
-
 a {
 	color: #00B7FF;
 }
+
+/**** FORM ****/
+fieldset {
+	margin-bottom: 10px;
+}
+.form-control {
+	display: inline;
+	width: 80%;
+}
+
+/***** LAYOUT *****/
 .container {
 	background-color: white;
 	padding-right: 0;
@@ -17,7 +30,7 @@ header, footer {
 	padding: 20px;
 }
 main {
-	padding: 50px;
+	padding: 50px 300px;
 }
 small {
 	display: block;

@@ -1,2 +1,43 @@
-<h1>{{title}}</h1>
-<p>Welcome to {{title}}.</p>
+<h1>Contact Form</h1>
+<form class="mx-auto contact-form" method="POST" action="send">
+    <fieldset>
+      <label class="control-label col-2" for="name">Name:</label>
+      <input
+        type="text"
+        id="name"
+        name="name"
+        placeholder="Enter Name"
+        class="form-control"
+      />
+    </fieldset>
+    <fieldset>
+      <label class="control-label col-2" for="email">Email:</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="Enter Email"
+        class="form-control"
+      />
+    </fieldset>
+    <fieldset>
+      <label class="control-label col-2" for="subject">Subject:</label>
+      <input
+        type="text"
+        id="subject"
+        name="subject"
+        placeholder="Subject line"
+        class="form-control"
+      />
+    </fieldset>
+    <fieldset>
+      <label class="control-label col-2" for="message">Message:</label>
+      <textarea
+        id="message"
+        name="message"
+        rows="5"
+        class="form-control"
+      ></textarea>
+    </fieldset>
+    <button class="btn btn-primary offset-2">Submit</button>
+</form>
