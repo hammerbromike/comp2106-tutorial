@@ -6,8 +6,9 @@
         type="text"
         id="name"
         name="name"
-        placeholder="Enter Name"
+        placeholder="Enter Name*"
         class="form-control"
+        required
       />
     </fieldset>
     <fieldset>
@@ -16,7 +17,18 @@
         type="email"
         id="email"
         name="email"
-        placeholder="Enter Email"
+        placeholder="Enter Email*"
+        class="form-control"
+        required
+      />
+    </fieldset>
+    <fieldset>
+      <label class="control-label col-2" for="address">Address:</label>
+      <input
+        type="address"
+        id="address"
+        name="address"
+        placeholder="Enter Address"
         class="form-control"
       />
     </fieldset>
@@ -26,8 +38,9 @@
         type="text"
         id="subject"
         name="subject"
-        placeholder="Subject line"
+        placeholder="Subject line*"
         class="form-control"
+        required
       />
     </fieldset>
     <fieldset>
@@ -37,6 +50,7 @@
         name="message"
         rows="5"
         class="form-control"
+        required
       ></textarea>
     </fieldset>
     <button class="btn btn-primary offset-2">Submit</button>
