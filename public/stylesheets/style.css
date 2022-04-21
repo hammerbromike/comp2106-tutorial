@@ -1,0 +1,29 @@
+body {
+	background-color: lightgrey;
+	font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+	color: #00B7FF;
+}
+.container {
+	background-color: white;
+	padding-right: 0;
+	padding-left: 0;
+}
+header, footer {
+	background-color: rgba(144, 238, 144, 0.5);
+	text-align: center;
+	padding: 20px;
+}
+main {
+	padding: 50px;
+}
+small {
+	display: block;
+}
+small:first-of-type {
+	font-size: 110%;
+	font-weight: bold;
+	padding-bottom: 10px;
+}
