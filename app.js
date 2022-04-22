@@ -5,8 +5,8 @@ var cookieParser = require("cookie-parser");
 var logger = require("morgan");
 
 //Twilio Variables
-const accountSid = "";
-const authToken = "";
+const accountSid = "AC14ed702b4b0dbf3b1e3e87da9b55812a";
+const authToken = "ddf58a8751355eb0ad51ee6c02fb8224";
 const twilio = require("twilio");
 const client = new twilio(accountSid, authToken);
 
