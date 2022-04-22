@@ -5,8 +5,8 @@ var cookieParser = require("cookie-parser");
 var logger = require("morgan");
 
 //Twilio Variables
-const accountSid = "AC14ed702b4b0dbf3b1e3e87da9b55812a";
-const authToken = "ddf58a8751355eb0ad51ee6c02fb8224";
+const accountSid = "";
+const authToken = "";
 const twilio = require("twilio");
 const client = new twilio(accountSid, authToken);
 
@@ -37,8 +37,8 @@ app.post("/send", (req, res) => {
   client.messages
     .create({
       body: "This will be the body of the new message!",
-      from: "+12055709896",
-      to: "+17059371421",
+      from: "",
+      to: "",
     })
     .then((message) => console.log(message.sid));
 
