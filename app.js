@@ -3,6 +3,13 @@ var express = require("express");
 var path = require("path");
 var cookieParser = require("cookie-parser");
 var logger = require("morgan");
+
+//Twilio Variables
+const accountSid = "AC14ed702b4b0dbf3b1e3e87da9b55812a";
+const authToken = "ddf58a8751355eb0ad51ee6c02fb8224";
+const twilio = require("twilio");
+const client = new twilio(accountSid, authToken);
+
 // step 1: npm i nodemailer and require (and nodemon if not already installed)
 var nodemailer = require("nodemailer");
 
@@ -26,6 +33,15 @@ app.use("/users", usersController);
 
 // step 2: the send function
 app.post("/send", (req, res) => {
+  //When the send function runs, make an http post request to Twilio
+  client.messages
+    .create({
+      body: "This will be the body of the new message!",
+      from: "+12055709896",
+      to: "+17059371421",
+    })
+    .then((message) => console.log(message.sid));
+
   // log the body of the request, to see the json data that has been parsed
   console.log(req.body);
   // html output of the message
